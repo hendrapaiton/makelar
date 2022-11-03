@@ -8,5 +8,5 @@ class MakelarPipeline:
         self.file.close()
 
     def process_item(self, item, spider):
-        self.file.write('{}:{}'.format(item['addr'], item['port']))
+        self.file.write('{}:{}\n'.format(item['addr'], item['port']))
         return item
